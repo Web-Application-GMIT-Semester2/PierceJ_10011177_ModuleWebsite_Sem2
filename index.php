@@ -34,7 +34,7 @@ include './assets/templates/banner.php';
 							<th>Brief Description</th>
 							<th>Project Link</th>
 						</tr>
-						<tr ng-repeat="lab in labsArr.slice(9,11)">
+						<tr ng-repeat="lab in labsArr.slice(9,12)">
 							<td class="data">{{lab.week}}</td>
 							<td class="data">{{lab.desc}}</td>
 							<td class="data"><a href={{lab.link}}><i class="{{lab.icon}}" aria-hidden="true"></i></a></td>
