@@ -18,16 +18,20 @@ angular.module('moduleWebsite.controllers', [])
   var six = new labsObj("Six","This week we looked at Event Listeners and AJAX.", "week6.php");
   var seven = new labsObj("Seven", "This week we looked at AJAX and jQuery.", "week7.php");
   var eight = new labsObj("Eight", "This week we look at AJAX and jQuery combined with lectures on the Software Development Lifecycle and Agile", "week8.php");
+  var nine = new labsObj("Nine", "This week we look at PHP and how to connect to MySQL DB Lab", "week9.php");
+  var ten = new labsObj("Ten", "This week I used to catch up on missed lectures and labs", "week10.php");
 
   var misc1 = new labsObj("Project", "This is some detail including a link to my Project.", "project.php","fa fa-folder-open");
-  var misc2 = new labsObj("Assessment 1", "This is a zip file to my first assessment with my answer and the correct solution.", "./assets/templates/weeks/assessments/Assessment1.zip","fa fa-file-archive-o");
-  var misc3 = new labsObj("Assessment 2", "This is a zip file to my first assessment with my answer.", "./assets/templates/weeks/assessments/Assessment2.zip","fa fa-file-archive-o");
+  var misc2 = new labsObj("Assessment 1", "This is a zip file to my first assessment with my answer and the correct solution.", "assessment1.php", "fa fa-link");
+  var misc3 = new labsObj("Assessment 2", "This is a zip file to my first assessment with my answer.", "assessment2.php", "fa fa-link");
 
   var wk1Lect1 = new labsObj("Module Introduction", "An Introduction to the Module Topics and Assessments (PDF)", "./assets/templates/weeks/01/WAD_ModuleIntro.pdf", "fa fa-file-pdf-o");
   var wk1Lect2 = new labsObj("Javascript Basics Lecture", "Revision Lecture 1 (PDF)", "./assets/templates/weeks/01/JavascriptBasics_Lecture.pdf", "fa fa-file-pdf-o");
   var wk1Lect3 = new labsObj("Functions Lecture", "Revision Lecture 2 (PDF)", "./assets/templates/weeks/01/Functions_Lecture.pdf", "fa fa-file-pdf-o");
   var wk1Lect4 = new labsObj("Decisions and Loops Lecture", "Revision Lecture 3 (PDF)", "./assets/templates/weeks/01/DecisionsAndLoops_Lecture.pdf", "fa fa-file-pdf-o");
+  var wk1Lect5 = new labsObj("Lab One Notes", "Lab One Notes (PDF)", "./assets/templates/weeks/01/HTML_CSS_Javascript_Lab.pdf", "fa fa-file-pdf-o");
   var wk1Lab1 = new labsObj("Lab One", "A lab was posted on moodle along with the solution and we were advised to complete the lab in our own time.", "./assets/templates/weeks/01/lab1/check_order.html", "fa fa-html5");
+  var wk1Lect6 = new labsObj("Lab Two Notes", "Lab Two Notes (PDF)", "./assets/templates/weeks/01/Javascript_Arrays_Lab.pdf", "fa fa-file-pdf-o");
   var wk1Lab2 = new labsObj("Lab Two", "A lab was posted on moodle along with the solution and we were advised to complete the lab in our own time.", "./assets/templates/weeks/01/lab2/array-literal.html", "fa fa-html5");
 
   var wk2Lect1 = new labsObj("JavaScript Functions Lab Notes","A simple functions lab Add 2 numbers. (PDF)","./assets/templates/weeks/02/Javascript_Functions_Lab.pdf", "fa fa-file-pdf-o");
@@ -62,28 +66,59 @@ angular.module('moduleWebsite.controllers', [])
   var wk5lect2 = new labsObj("Events Delegation Lab","Lab notes on Event Delegation. (PDF)","./assets/templates/weeks/05/JavaScript Events Lab 4.pdf", "fa fa-file-pdf-o");
   var wk5lab0 = new labsObj("Event Delegation","A lab covering event delegation.","./assets/templates/weeks/05/lab0/event-delegation.html", "fa fa-html5");
 
-  var wk6lect1 = new labsObj("Lab notes on AJAX(HTML)","Ajax(HTML) Exercise.","./assets/templates/weeks/06/First_AJAX_Lab.pdf", "fa fa-file-o");
+  var wk6lect1 = new labsObj("Lab notes on AJAX(HTML)","Ajax(HTML) Exercise.","./assets/templates/weeks/06/First_AJAX_Lab.pdf", "fa fa-file-pdf-o");
   var wk6lab0 = new labsObj("AJAX HTML","A lab covering AJAX reading from HTML.","./assets/templates/weeks/06/lab0/data-html.html", "fa fa-html5");
-  var wk6lect2 = new labsObj("Lab notes on AJAX(JSON)","Ajax(JSON) Exercise.","./assets/templates/weeks/06/Second_AJAX_Lab.pdf", "fa fa-file-o");
+  var wk6lect2 = new labsObj("Lab notes on AJAX(JSON)","Ajax(JSON) Exercise.","./assets/templates/weeks/06/Second_AJAX_Lab.pdf", "fa fa-file-pdf-o");
   var wk6lab1 = new labsObj("AJAX JSON","A lab covering AJAX reading from JSON.","./assets/templates/weeks/06/lab1/data-json.html", "fa fa-html5");
-  var wk6lect3 = new labsObj("Lab notes on AJAX(XML)","Lab Exercise on Web Storage.","./assets/templates/weeks/06/Third_AJAX_Lab.pdf", "fa fa-file-o");
+  var wk6lect3 = new labsObj("Lab notes on AJAX(XML)","Lab Exercise on Web Storage.","./assets/templates/weeks/06/Third_AJAX_Lab.pdf", "fa fa-file-pdf-o");
   var wk6lab2 = new labsObj("AJAX XML","A lab covering AJAX reading from XML.","./assets/templates/weeks/06/lab2/data-xml.html", "fa fa-html5");
+  var wk6lect4 = new labsObj("Event listener Example","Event listener Example Notes. (PDF)","./assets/templates/weeks/06/Javascript_Event_Listener_Lab.pdf", "fa fa-file-pdf-o");
+  var wk6lab3 = new labsObj("Event listener Example.","Event listener Example Lab", "./assets/templates/weeks/06/lab3/register_build.html", "fa fa-html5");
 
-  var wk7lect1 = new labsObj("Notes on JSONP","Ajax(JSONP) Notes(PDF).","./assets/templates/weeks/07/JSONP_Explanation.pdf", "fa fa-file-o");
-  var wk7lect2 = new labsObj("Lab notes on AJAX(JSONP)","Ajax(JSONP) Exercise.","./assets/templates/weeks/07/First_JSONP_Lab.pdf", "fa fa-file-o");
+  var wk7lect1 = new labsObj("Notes on JSONP","Ajax(JSONP) Notes(PDF).","./assets/templates/weeks/07/JSONP_Explanation.pdf", "fa fa-file-pdf-o");
+  var wk7lect2 = new labsObj("Lab notes on AJAX(JSONP)","Ajax(JSONP) Exercise.","./assets/templates/weeks/07/First_JSONP_Lab.pdf", "fa fa-file-pdf-o");
   var wk7lab0 = new labsObj("AJAX JSONP","A lab covering AJAX reading from JSONP.","./assets/templates/weeks/07/lab0/data-jsonp.html", "fa fa-html5");
-  var wk7lect3 = new labsObj("1st jQuery Lab notes(pdf)","A lab covering jQuery.","./assets/templates/weeks/07/First_jQuery_Exercise.pdf", "fa fa-file-o");
+  var wk7lect3 = new labsObj("1st jQuery Lab notes(PDF)","A lab covering jQuery.","./assets/templates/weeks/07/First_jQuery_Exercise.pdf", "fa fa-file-pdf-o");
   var wk7lab1 = new labsObj("1st jQuery Lab","1st Lab Exercise on jQuery.","./assets/templates/weeks/07/lab1/basic-example.html", "fa fa-html5");
-  var wk7lect4 = new labsObj("2nd jQuery Lab notes(pdf)","A 2nd lab covering jQuery.","./assets/templates/weeks/07/Second_jQuery_Exercise.pdf", "fa fa-file-o");
+  var wk7lect4 = new labsObj("2nd jQuery Lab notes(PDF)","A 2nd lab covering jQuery.","./assets/templates/weeks/07/Second_jQuery_Exercise.pdf", "fa fa-file-pdf-o");
   var wk7lab2 = new labsObj("2nd jQuery Lab","2nd Lab Exercise on jQuery.","./assets/templates/weeks/07/lab2/looping.html", "fa fa-html5");
-  var wk7lect5 = new labsObj("3rd jQuery Lab notes(pdf)","A 3rd lab covering jQuery.","./assets/templates/weeks/07/Third_jQuery_Exercise.pdf", "fa fa-file-o");
+  var wk7lect5 = new labsObj("3rd jQuery Lab notes(PDF)","A 3rd lab covering jQuery.","./assets/templates/weeks/07/Third_jQuery_Exercise.pdf", "fa fa-file-pdf-o");
   var wk7lab3 = new labsObj("3rd jQuery Lab","3rd Lab Exercise on jQuery.","./assets/templates/weeks/07/lab3/ready.html", "fa fa-html5");
 
-  var wk8lect1 = new labsObj("Lecture on SDL and Agile","SDL and Agile Lecture(PDF).","./assets/templates/weeks/08/Lecture2_Software_Development_Life_Cycle.pdf", "fa fa-file-o");
-  var wk8lect2 = new labsObj("Credit Card Plugin Notes","Credit Card Plugin(PDF).","./assets/templates/weeks/08/Fourth_jQuery_Exercise.pdf", "fa fa-file-o");
+  var wk8lect1 = new labsObj("Lecture on SDL and Agile","SDL and Agile Lecture. (PDF).","./assets/templates/weeks/08/Lecture2_Software_Development_Life_Cycle.pdf", "fa fa-file-pdf-o");
+  var wk8lect2 = new labsObj("Credit Card Plugin Notes","Credit Card Plugin. (PDF).","./assets/templates/weeks/08/Fourth_jQuery_Exercise.pdf", "fa fa-file-pdf-o");
   var wk8lab0 = new labsObj("Credit Card Plugin Example","A lab covering Credit Card Plugin.","./assets/templates/weeks/08/lab0/creditcardjQuery.html", "fa fa-html5");
-  var wk8lect3 = new labsObj("5th jQuery Lab notes(pdf)","A 5th lab covering jQuery.","./assets/templates/weeks/08/Fifth_jQuery_Exercise.pdf", "fa fa-file-o");
+  var wk8lect3 = new labsObj("5th jQuery Lab notes","A 5th lab covering jQuery. (PDF)","./assets/templates/weeks/08/Fifth_jQuery_Exercise.pdf", "fa fa-file-pdf-o");
   var wk8lab1 = new labsObj("5th jQuery Lab","5th Lab Exercise on jQuery.","./assets/templates/weeks/08/lab1/data-jsonp.html", "fa fa-html5");
-  var wk8lect4 = new labsObj("6th jQuery Lab notes(pdf)","A 6th lab covering jQuery.","./assets/templates/weeks/08/Sixth_jQuery_Exercise.pdf", "fa fa-file-o");
+  var wk8lect4 = new labsObj("6th jQuery Lab notes","A 6th lab covering jQuery. (PDF)","./assets/templates/weeks/08/Sixth_jQuery_Exercise.pdf", "fa fa-file-pdf-o");
   var wk8lab2 = new labsObj("6th jQuery Lab","6th Lab Exercise on jQuery.","./assets/templates/weeks/08/lab2/data-xml.html", "fa fa-html5");
+
+  var wk9lect1 = new labsObj("Lecture on PHP","PHP Lecture. (PDF).","./assets/templates/weeks/09/Lecture_PHP.pdf", "fa fa-file-pdf-o");
+  var wk9labPDF1 = new labsObj("Lab Notes on PHP","PHP Lab. (PDF).","./assets/templates/weeks/09/First_PHP_Lab.pdf", "fa fa-file-pdf-o");
+  var wk9lab1 = new labsObj("Lab on PHP","PHP Lab, Connect to MySQL DB. Not Working as file needs to be copied and DB created.","./assets/templates/weeks/09/lab0/phpinfo.php", "fa fa-html5");
+  var wk9sql1 = new labsObj("SQL File for Lab 1","Download SQL and import to web_apps DB on MySQL","./assets/templates/weeks/09/web_apps.sql", "fa fa-database");
+  var wk9labPDF2 = new labsObj("Lab 2 Exercise 1,2 & 3 on PHP","PHP Lab 2 Exercise 1,2 & 3. (PDF).","./assets/templates/weeks/09/Second_PHP_Lab.pdf", "fa fa-file-pdf-o");
+  var wk9lab2Ex1 = new labsObj("2nd Lab Exercise 1 on PHP","Lab 2 Exercise 1 PHP Lab.","./assets/templates/weeks/09/lab1/ex1.php", "fa fa-html5");
+  var wk9lab2Ex2 = new labsObj("2nd Lab Exercise 2 & 3 on PHP","2nd & 3rd PHP Exercise Lab 2.","./assets/templates/weeks/09/lab1/index.html", "fa fa-html5");
+
+  var projspecs = new labsObj("Project Specification","Document outlining the project requirements. (PDF)","./assets/templates/weeks/project/Web Application Development Project.pdf", "fa fa-file-pdf-o");
+  var projinst = new labsObj("Install Instructions","Install Instructions for website. (PDF)","#", "fa fa-file-pdf-o");
+  var projfiles = new labsObj("Project Binary Files","Zip file containing binaries for Project Website","#", "fa fa-file-archive-o");
+
+  var assess1pdf = new labsObj("Assessment 1","2 Questions 1 Error Handling and 1 Events","./assets/templates/weeks/assessments/1/javascript_assessment.pdf","fa fa-file-pdf-o");
+  var assess1Q1 = new labsObj("Question 1","Unanswered Question 1","./assets/templates/weeks/assessments/1/q1/error.html","fa fa-times-circle-o");
+  var assess1Q2 = new labsObj("Question 2","Unanswered Question 2","./assets/templates/weeks/assessments/1/q2/addNames.html","fa fa-times-circle-o");
+  var assess1A1 = new labsObj("Attempt 1","My Attempt Question 1","./assets/templates/weeks/assessments/1/a1/error.html","fa fa-question-circle");
+  var assess1A2 = new labsObj("Attempt 2","My Attempt Question 2","./assets/templates/weeks/assessments/1/a2/addNames.html","fa fa-question-circle");
+  var assess1S1 = new labsObj("Solution 1","Question 1 - Solution","./assets/templates/weeks/assessments/1/s1/error.html","fa fa-check-circle");
+  var assess1S2 = new labsObj("Solution 2","Question 2 - Solution","./assets/templates/weeks/assessments/1/s2/addNames.html","fa fa-check-circle-o");
+
+  var assess2pdf = new labsObj("Assessment 2","3 Questions AJAX and jQuery","./assets/templates/weeks/assessments/2/WebApplicationDevelopment_assessment2.pdf","fa fa-file-pdf-o");
+  var assess2q1 = new labsObj("Assessment 2 Q1","AJAX(JSON) and DOM","./assets/templates/weeks/assessments/2/Q1/index.html","fa fa-html5");
+  var assess2q2 = new labsObj("Assessment 2 Q2","AJAX(JSON) and jQuery","./assets/templates/weeks/assessments/2/Q2/index.html","fa fa-html5");
+  var assess2q3 = new labsObj("Assessment 2 Q3","AJAX(JSONP)","./assets/templates/weeks/assessments/2/Q3/index.html","fa fa-html5");
+  var assessjson = new labsObj("Assessment 2 JSON File","JSON file for Q1 & Q2","./assets/templates/weeks/assessments/2/league_table.json","fa fa-file");
+
+  var missedWeek1 = new labsObj("Create Page Lab Notes","Create Page Lab Notes. (TXT).","./assets/templates/weeks/10/README.txt", "fa fa-file");
+  var missedWeek2 = new labsObj("Create Page Lab","Create Page Example.","./assets/templates/weeks/10/lab0/create_page.html", "fa fa-html5");
 });

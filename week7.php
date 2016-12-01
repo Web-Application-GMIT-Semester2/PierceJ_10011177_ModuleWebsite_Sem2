@@ -11,7 +11,7 @@ include './assets/templates/banner.php';
 			<h1>Lectures and Lab on AJAX (JSONP) & jQuery.</h1>
 		</header>
 		<div class="features">
-			<div class="feature" ng-repeat="lab in labsArr.slice(43,52)">
+			<div class="feature" ng-repeat="lab in labsArr.slice(58,67)">
 				<a href={{lab.link}}><i class="{{lab.icon}}"></i></a>
 				<h3>{{lab.week}}</h3>
 				<p>{{lab.desc}}</p>

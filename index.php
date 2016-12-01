@@ -22,7 +22,7 @@ include './assets/templates/banner.php';
 							<th class="header">Description</th>
 							<th class="header">Link</th>
 						</tr>
-						<tr ng-repeat="lab in labsArr.slice(1,9)">
+						<tr ng-repeat="lab in labsArr.slice(1,11)">
 							<td class="data">{{lab.week}}</td>
 							<td class="data">{{lab.desc}}</td>
 							<td class="data"><a href={{lab.link}}><i class="fa fa-link" aria-hidden="true"></i></a></td>
@@ -34,10 +34,10 @@ include './assets/templates/banner.php';
 							<th>Brief Description</th>
 							<th>Project Link</th>
 						</tr>
-						<tr ng-repeat="lab in labsArr.slice(9,12)">
+						<tr ng-repeat="lab in labsArr.slice(11,14)">
 							<td class="data">{{lab.week}}</td>
 							<td class="data">{{lab.desc}}</td>
-							<td class="data"><a href={{lab.link}}><i class="{{lab.icon}}" aria-hidden="true"></i></a></td>
+							<td class="data"><a href={{lab.link}}><i class="fa fa-link" aria-hidden="true"></i></a></td>
 						</tr>
 					</table>
 				</div>

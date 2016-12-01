@@ -11,7 +11,7 @@ include './assets/templates/banner.php';
 			<h1>Just went over basic JavaScript functionality.</h1>
 		</header>
 		<div class="features">
-			<div ng-repeat="lab in labsArr.slice(18,23)" class="feature">
+			<div ng-repeat="lab in labsArr.slice(22,27)" class="feature">
 				<a href={{lab.link}}><i class={{lab.icon}}></i></a>
 				<h3>{{lab.week}}</h3>
 				<p>{{lab.desc}}</p>
