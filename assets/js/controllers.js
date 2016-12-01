@@ -8,7 +8,7 @@ angular.module('moduleWebsite.controllers', [])
     this.link = link;
     this.icon = icon;
   }
-  var lecture = new labsObj("Lecture ZIP File", "Zip file with all lectures from Web Applicaiton Development Semester 2", "./assets/docs/lectures.zip", "fa fa-file-archive-o")
+  var lecture = new labsObj("Lecture ZIP File", "Zip file with all lectures from Web Application Development Semester 2", "./assets/docs/WebAppDevLectures.zip", "fa fa-file-archive-o")
 
   var one = new labsObj("One", "This week we looked at the module content.", "week1.php");
   var two = new labsObj("Two", "This week we looked at the some basic JavaScript.", "week2.php");
@@ -23,35 +23,44 @@ angular.module('moduleWebsite.controllers', [])
   var misc2 = new labsObj("Assessment 1", "This is a zip file to my first assessment with my answer and the correct solution.", "./assets/templates/weeks/assessments/Assessment1.zip","fa fa-file-archive-o");
   var misc3 = new labsObj("Assessment 2", "This is a zip file to my first assessment with my answer.", "./assets/templates/weeks/assessments/Assessment2.zip","fa fa-file-archive-o");
 
-  var wk1Lect1 = new labsObj("Module Introduction", "An Introduction to the Module Topics and Assessments.", "./assets/templates/weeks/01/WAD_ModuleIntro.pdf", "fa fa-file");
-  var wk1Lab0 = new labsObj("Revision Lab & Notes", "Revision Lab and Lectures (Zip Archive)", "./assets/templates/weeks/01/lab0/revision.zip", "fa fa-file-archive-o");
+  var wk1Lect1 = new labsObj("Module Introduction", "An Introduction to the Module Topics and Assessments (PDF)", "./assets/templates/weeks/01/WAD_ModuleIntro.pdf", "fa fa-file-pdf-o");
+  var wk1Lect2 = new labsObj("Javascript Basics Lecture", "Revision Lecture 1 (PDF)", "./assets/templates/weeks/01/JavascriptBasics_Lecture.pdf", "fa fa-file-pdf-o");
+  var wk1Lect3 = new labsObj("Functions Lecture", "Revision Lecture 2 (PDF)", "./assets/templates/weeks/01/Functions_Lecture.pdf", "fa fa-file-pdf-o");
+  var wk1Lect4 = new labsObj("Decisions and Loops Lecture", "Revision Lecture 3 (PDF)", "./assets/templates/weeks/01/DecisionsAndLoops_Lecture.pdf", "fa fa-file-pdf-o");
   var wk1Lab1 = new labsObj("Lab One", "A lab was posted on moodle along with the solution and we were advised to complete the lab in our own time.", "./assets/templates/weeks/01/lab1/check_order.html", "fa fa-html5");
   var wk1Lab2 = new labsObj("Lab Two", "A lab was posted on moodle along with the solution and we were advised to complete the lab in our own time.", "./assets/templates/weeks/01/lab2/array-literal.html", "fa fa-html5");
 
-  var wk2Lect = new labsObj("JavaScript Lectures","Lectures and Exercises on Javascript basics and objects","./assets/templates/weeks/02/Week2Lectures.zip", "fa fa-file-archive-o")
-  var wk2lab0 = new labsObj("JavaScript Basics","A lab covering JavaScript functions, loops and basic Javascript functionality","./assets/templates/weeks/02/lab4/basic.html", "fa fa-html5");
+  var wk2Lect1 = new labsObj("JavaScript Functions Lab Notes","A simple functions lab Add 2 numbers. (PDF)","./assets/templates/weeks/02/Javascript_Functions_Lab.pdf", "fa fa-file-pdf-o");
+  var wk2Lect3 = new labsObj("Test Cases","A sample test case based on the simple functions lab (PDF)","./assets/templates/weeks/02/TestCases.pdf", "fa fa-file-pdf-o");
+  var wk2lab0 = new labsObj("JavaScript Functions Lab","The completed JavaScript Functions Lab","./assets/templates/weeks/02/lab4/basic.html", "fa fa-html5");
+  var wk2Lect2 = new labsObj("JavaScript Objects Literal Notes","Hotel Object lab using Object Literal Notation (PDF)","./assets/templates/weeks/02/JavaScript Objects Exercise 1.pdf", "fa fa-file-pdf-o");
   var wk2lab1 = new labsObj("JavaScript Objects","A lab covering JavaScript Objects. Literal Notation.","./assets/templates/weeks/02/lab3/object-literal.html", "fa fa-html5");
 
-  var wk3Lect = new labsObj("Software Testing Lectures","An Introduction to Software Testing.","./assets/templates/weeks/03/SoftwareTesting.zip", "fa fa-file-archive-o")
-  var wk3lab2 = new labsObj("Software Testing Sample","Software Testing sample html.","./assets/templates/weeks/03/lab0/BugSample.html", "fa fa-html5")
+  var wk3Lect1 = new labsObj("Software 'Bugs' Lectures","An Introduction to Software Testing. (PDF)","./assets/templates/weeks/03/Lecture_Bugs.pdf", "fa fa-file-pdf-o");
+  var wk3Lect2 = new labsObj("Expensive 'Bugs'","Infamous and Expensive 'Bugs'. (PDF)","./assets/templates/weeks/03/Infamous and Expensive Bugs.pdf", "fa fa-file-pdf-o");
+  var wk3lab2 = new labsObj("Software Testing Sample","Software Testing sample html.","./assets/templates/weeks/03/lab0/BugSample.html", "fa fa-html5");
+  var wk3Lect3 = new labsObj("Objects Constructor Lab Notes","Hotel Lab (2) (PPTX)","./assets/templates/weeks/03/exercise2.pptx", "fa fa-file-powerpoint-o");
   var wk3lab0 = new labsObj("Constructor Objects","A lab covering constructor JavaScript Objects.","./assets/templates/weeks/03/lab1/object-constructor.html", "fa fa-html5");
+  var wk3Lect4 = new labsObj("Multiple Objects Lab Notes","Hotel Lab (3) (PPT)","./assets/templates/weeks/03/Lecture_Objects_Exercise.ppt", "fa fa-file-powerpoint-o");
   var wk3lab1 = new labsObj("Multiple Objects","A lab covering Multiple JavaScript Objects.","./assets/templates/weeks/03/lab2/multiple-objects.html", "fa fa-html5");
 
-  var wk4lect = new labsObj("Error Handling Lectures","Lecture Notes on Error Handling.","./assets/templates/weeks/04/Javascript Exception Handling Lab.pdf", "fa fa-file-o");
+  var wk4lect = new labsObj("Error Handling Lectures","Lecture Notes on Error Handling. (PDF)","./assets/templates/weeks/04/Javascript Exception Handling Lab.pdf", "fa fa-file-pdf-o");
   var wk4lab5 = new labsObj("Error Handling Lab","A lab on Error Handling.","./assets/templates/weeks/04/lab5/exception_lab.html", "fa fa-html5");
-  var wk4pdf0 = new labsObj("Event Types Lab","Lab Notes on Event Types.","./assets/templates/weeks/04/JavaScript Events Lab 1.pdf", "fa fa-file");
-  var wk4pdf1 = new labsObj("Event Flow Lab","Lab Notes on Event Flows.","./assets/templates/weeks/04/JavaScript Events Lab 1.pdf", "fa fa-file-o");
+  var wk4pdf0 = new labsObj("Event Types Lab","Lab Notes on Event Types. (PDF)","./assets/templates/weeks/04/JavaScript Events Lab 1.pdf", "fa fa-file-pdf-o");
   var wk4lab0 = new labsObj("Event Attributes","A lab covering event attributes.","./assets/templates/weeks/04/lab0/event-attributes.html", "fa fa-html5");
   var wk4lab1 = new labsObj("Event Handler","A lab covering Event handler.","./assets/templates/weeks/04/lab1/event-handler.html", "fa fa-html5");
   var wk4lab2 = new labsObj("Event listener","A lab covering Event listeners.","./assets/templates/weeks/04/lab2/event-listener.html", "fa fa-html5");
+  var wk4pdf1 = new labsObj("Event Flow Lab","Lab Notes on Event Flows. (PDF)","./assets/templates/weeks/04/JavaScript Events Lab 2.pdf", "fa fa-file-pdf-o");
   var wk4lab3 = new labsObj("Event Flow Bubble","A lab covering Event Flow Bubble..","./assets/templates/weeks/04/lab3/event-flow-bubble.html", "fa fa-html5");
   var wk4lab4 = new labsObj("Event Flow Capture","A lab covering Event Flow Capture..","./assets/templates/weeks/04/lab4/event-flow-capture.html", "fa fa-html5");
 
-  var wk5lect1 = new labsObj("Lecture Web Storage","Lecture Notes on Web Storage.","./assets/templates/weeks/05/Lecture_WebStorage.pdf", "fa fa-file-o");
-  var wk5lect2 = new labsObj("Web Storage Exercise","Lab Exercise on Web Storage.","./assets/templates/weeks/05/JavaScript Web Storage Exercise.pdf", "fa fa-file-o");
-  var wk5lab0 = new labsObj("Event Delegation","A lab covering event delegation.","./assets/templates/weeks/05/lab0/event-delegation.html", "fa fa-html5");
-  var wk5lab1 = new labsObj("Event Delegation 2","A second lab covering event delegation.","./assets/templates/weeks/05/lab1/event-delegation.html", "fa fa-html5");
+  var wk5lect1 = new labsObj("Lecture Web Storage","Lecture Notes on Web Storage. (PDF)","./assets/templates/weeks/05/Lecture_WebStorage.pdf", "fa fa-file-pdf-o");
+  var wk5lect2 = new labsObj("Web Storage Lab","A lab covering web storage. (PDF)","./assets/templates/weeks/05/JavaScript Web Storage Exercise.pdf", "fa fa-file-pdf-o");
   var wk5lab2 = new labsObj("Web Storage","A lab covering web storage.","./assets/templates/weeks/05/lab2/local_storage.html", "fa fa-html5");
+  var wk5lect3 = new labsObj("Event Object","A lab covering event objects. (TXT)","./assets/templates/weeks/05/EventObject.txt", "fa fa-file");
+  var wk5lab3 = new labsObj("Event Object Lab","A lab covering event objects.","./assets/templates/weeks/05/lab3/event-listener-with-event-object.html", "fa fa-html5");
+  var wk5lect2 = new labsObj("Events Delegation Lab","Lab notes on Event Delegation. (PDF)","./assets/templates/weeks/05/JavaScript Events Lab 4.pdf", "fa fa-file-pdf-o");
+  var wk5lab0 = new labsObj("Event Delegation","A lab covering event delegation.","./assets/templates/weeks/05/lab0/event-delegation.html", "fa fa-html5");
 
   var wk6lect1 = new labsObj("Lab notes on AJAX(HTML)","Ajax(HTML) Exercise.","./assets/templates/weeks/06/First_AJAX_Lab.pdf", "fa fa-file-o");
   var wk6lab0 = new labsObj("AJAX HTML","A lab covering AJAX reading from HTML.","./assets/templates/weeks/06/lab0/data-html.html", "fa fa-html5");

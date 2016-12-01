@@ -12,7 +12,7 @@ include './assets/templates/banner.php';
 			<h1>Short Introduction to Software Testing.</h1>
 		</header>
 		<div class="features">
-			<div class="feature" ng-repeat="lab in labsArr.slice(19,23)">
+			<div class="feature" ng-repeat="lab in labsArr.slice(23,30)">
 				<a href={{lab.link}}><i class="{{lab.icon}}"></i></a>
 				<h3>{{lab.week}}</h3>
 				<p>{{lab.desc}}</p>

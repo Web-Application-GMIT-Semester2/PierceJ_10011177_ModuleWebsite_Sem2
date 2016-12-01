@@ -11,7 +11,7 @@ include './assets/templates/banner.php';
 			<h1>Short Introduction and Practical on Error Handling.</h1>
 		</header>
 		<div class="features">
-			<div class="feature" ng-repeat="lab in labsArr.slice(23,32)">
+			<div class="feature" ng-repeat="lab in labsArr.slice(30,39)">
 				<a href={{lab.link}}><i class="{{lab.icon}}"></i></a>
 				<h3>{{lab.week}}</h3>
 				<p>{{lab.desc}}</p>
