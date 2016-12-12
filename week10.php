@@ -11,7 +11,7 @@ include './assets/templates/banner.php';
 			<h1>Missed labs and lectures</h1>
 		</header>
 		<div class="features">
-			<div class="feature" ng-repeat="lab in labsArr.slice(96,99)">
+			<div class="feature" ng-repeat="lab in labsArr.slice(96,105)">
 				<a href={{lab.link}}><i class="{{lab.icon}}"></i></a>
 				<h3>{{lab.week}}</h3>
 				<p>{{lab.desc}}</p>

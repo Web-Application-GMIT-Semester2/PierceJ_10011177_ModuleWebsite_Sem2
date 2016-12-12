@@ -87,7 +87,7 @@ angular.module('moduleWebsite.controllers', [])
 
   var wk8lect1 = new labsObj("Lecture on SDL and Agile","SDL and Agile Lecture. (PDF).","./assets/templates/weeks/08/Lecture2_Software_Development_Life_Cycle.pdf", "fa fa-file-pdf-o");
   var wk8lect2 = new labsObj("Credit Card Plugin Notes","Credit Card Plugin. (PDF).","./assets/templates/weeks/08/Fourth_jQuery_Exercise.pdf", "fa fa-file-pdf-o");
-  var wk8lab0 = new labsObj("Credit Card Plugin Example","A lab covering Credit Card Plugin.","./assets/templates/weeks/08/lab0/creditcardjQuery.html", "fa fa-html5");
+  var wk8lab0 = new labsObj("Credit Card Plugin Example","A lab covering Credit Card Plugin.","./assets/templates/weeks/08/lab0/cc_validator.html", "fa fa-html5");
   var wk8lect3 = new labsObj("5th jQuery Lab notes","A 5th lab covering jQuery. (PDF)","./assets/templates/weeks/08/Fifth_jQuery_Exercise.pdf", "fa fa-file-pdf-o");
   var wk8lab1 = new labsObj("5th jQuery Lab","5th Lab Exercise on jQuery.","./assets/templates/weeks/08/lab1/data-jsonp.html", "fa fa-html5");
   var wk8lect4 = new labsObj("6th jQuery Lab notes","A 6th lab covering jQuery. (PDF)","./assets/templates/weeks/08/Sixth_jQuery_Exercise.pdf", "fa fa-file-pdf-o");
@@ -98,12 +98,12 @@ angular.module('moduleWebsite.controllers', [])
   var wk9lab1 = new labsObj("Lab on PHP","PHP Lab, Connect to MySQL DB. Not Working as file needs to be copied and DB created.","./assets/templates/weeks/09/lab0/phpinfo.php", "fa fa-html5");
   var wk9sql1 = new labsObj("SQL File for Lab 1","Download SQL and import to web_apps DB on MySQL","./assets/templates/weeks/09/web_apps.sql", "fa fa-database");
   var wk9labPDF2 = new labsObj("Lab 2 Exercise 1,2 & 3 on PHP","PHP Lab 2 Exercise 1,2 & 3. (PDF).","./assets/templates/weeks/09/Second_PHP_Lab.pdf", "fa fa-file-pdf-o");
-  var wk9lab2Ex1 = new labsObj("2nd Lab Exercise 1 on PHP","Lab 2 Exercise 1 PHP Lab.","./assets/templates/weeks/09/lab1/ex1.php", "fa fa-html5");
-  var wk9lab2Ex2 = new labsObj("2nd Lab Exercise 2 & 3 on PHP","2nd & 3rd PHP Exercise Lab 2.","./assets/templates/weeks/09/lab1/index.html", "fa fa-html5");
+  var wk9lab2Ex1 = new labsObj("2nd Lab Exercise 1 on PHP","Lab 2 Exercise 1 PHP Lab.","./assets/templates/weeks/09/lab1/ex1.php", "fa fa-code");
+  var wk9lab2Ex2 = new labsObj("2nd Lab Exercise 2 & 3 on PHP","2nd & 3rd PHP Exercise Lab 2.","./assets/templates/weeks/09/lab1/index.html", "fa fa-code");
 
   var projspecs = new labsObj("Project Specification","Document outlining the project requirements. (PDF)","./assets/templates/weeks/project/Web Application Development Project.pdf", "fa fa-file-pdf-o");
   var projinst = new labsObj("Install Instructions","Install Instructions for website. (PDF)","#", "fa fa-file-pdf-o");
-  var projfiles = new labsObj("Project Binary Files","Zip file containing binaries for Project Website","#", "fa fa-file-archive-o");
+  var projfiles = new labsObj("Project github link","Link to the github repository for my project","https://github.com/Web-Application-GMIT-Semester2/PierceJ_10011177_Project", "fa fa-github");
 
   var assess1pdf = new labsObj("Assessment 1","2 Questions 1 Error Handling and 1 Events","./assets/templates/weeks/assessments/1/javascript_assessment.pdf","fa fa-file-pdf-o");
   var assess1Q1 = new labsObj("Question 1","Unanswered Question 1","./assets/templates/weeks/assessments/1/q1/error.html","fa fa-times-circle-o");
@@ -121,4 +121,11 @@ angular.module('moduleWebsite.controllers', [])
 
   var missedWeek1 = new labsObj("Create Page Lab Notes","Create Page Lab Notes. (TXT).","./assets/templates/weeks/10/README.txt", "fa fa-file");
   var missedWeek2 = new labsObj("Create Page Lab","Create Page Example.","./assets/templates/weeks/10/lab0/create_page.html", "fa fa-html5");
+  var phppdf1 = new labsObj("Create User PHP Lab Notes","Lab Notes on Creating User PHP (PDF).","./assets/templates/weeks/10/lab1/Third_PHP_Lab.pdf", "fa fa-file-pdf-o");
+  var php3 = new labsObj("Create User PHP","Register a user on a DB using PHP.","./assets/templates/weeks/10/lab1/register.php", "fa fa-code");
+  var phppdf2 = new labsObj("Logging in PHP Lab Notes","Lab Notes on Logging in User PHP (PDF).","./assets/templates/weeks/10/lab2/Fourth_PHP_Lab.pdf", "fa fa-file-pdf-o");
+  var php4 = new labsObj("Login User","Login to DB using PHP.","./assets/templates/weeks/10/lab2/login.php", "fa fa-code");
+  var phppdf3 = new labsObj("Cookies and Session","Lab Notes on Cookies and Session (PDF).","./assets/templates/weeks/10/lab3/Fifth_PHP_Lab.pdf", "fa fa-file-pdf-o");
+  var php5a = new labsObj("Cookies Lab","Saving info using Cookies.","./assets/templates/weeks/10/lab3/cookies/welcome.php", "fa fa-code");
+  var php5b = new labsObj("Sessions Lab","Saving info using Sessions.","./assets/templates/weeks/10/lab3/sessions/storage.php", "fa fa-code");
 });

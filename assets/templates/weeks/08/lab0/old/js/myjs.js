@@ -19,6 +19,6 @@ result.valid ? $isValid=true : $isValid=false;
 });
 //Confirm button
 $('.confirm').on('click', function(){
-$isValid ? $(window).attr("location", "lally.html") : alert("Not valid cc");
+$isValid ? $(window).attr("location", "confirmed.html") : alert("Not valid cc");
 });
 });
