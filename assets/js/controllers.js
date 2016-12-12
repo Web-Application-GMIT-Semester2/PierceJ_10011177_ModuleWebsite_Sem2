@@ -102,7 +102,7 @@ angular.module('moduleWebsite.controllers', [])
   var wk9lab2Ex2 = new labsObj("2nd Lab Exercise 2 & 3 on PHP","2nd & 3rd PHP Exercise Lab 2.","./assets/templates/weeks/09/lab1/index.html", "fa fa-code");
 
   var projspecs = new labsObj("Project Specification","Document outlining the project requirements. (PDF)","./assets/templates/weeks/project/Web Application Development Project.pdf", "fa fa-file-pdf-o");
-  var projinst = new labsObj("Install Instructions","Install Instructions for website. (PDF)","#", "fa fa-file-pdf-o");
+  var projinst = new labsObj("Install Instructions","Install Instructions for website. (PDF)","./assets/templates/weeks/project/Installation Guide.pdf", "fa fa-file-pdf-o");
   var projfiles = new labsObj("Project github link","Link to the github repository for my project","https://github.com/Web-Application-GMIT-Semester2/PierceJ_10011177_Project", "fa fa-github");
 
   var assess1pdf = new labsObj("Assessment 1","2 Questions 1 Error Handling and 1 Events","./assets/templates/weeks/assessments/1/javascript_assessment.pdf","fa fa-file-pdf-o");
