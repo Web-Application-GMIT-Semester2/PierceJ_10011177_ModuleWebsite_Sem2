@@ -26,5 +26,7 @@ Step 4:
 Launch browser of choice (Developed on Firefox, Tested on IE11, EDGE and Chrome).
 
 Step 5:
-Paste in following to browser address bar. This site contains a link to my final project.
+Paste in following to browser address bar. 
 http://localhost/PierceJ_ModuleWebsite-master/
+
+This site contains a link to my final project.
